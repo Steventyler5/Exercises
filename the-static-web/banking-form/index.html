@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Banking Form</title>
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+	
+	<form action="">
+
+		<input type="text" name="first-name" placeholder="First Name">
+
+		<input type="text" name="middle-initial" placeholder="Middle Initial">
+
+		<input type="text" name="last-name" placeholder="Last Name">
+
+		<input type="text" name="applicant-address" placeholder="Address">
+		
+		<input type="text" name="applicant-occupation" placeholder="Occupation">
+
+		<input type="text" name="employer-name" placeholder="Employer">
+
+		<input type="text" name="employer-address" placeholder="Employer's Address">
+
+		
+		<label for="loan-type">Type of Loan:</label><br>
+		<select name="loan-type" id="loan-type" class="loan-select">
+			<option value="" disabled selected></option>
+			<option value="commercial">Commercial</option>
+			<option value="real-estate">Real Estate</option>
+			<option value="personal">Personal</option>
+			<option value="mortage">Mortage</option>
+		</select>
+
+		<label for="loan-amount">Amount Requesting:</label><br>
+		<input type="number" name="loan-amount" step="1000" min="1000" max="40000">
+
+		<label for="loan-length">Loan Length:</label><br>
+		<label><input type="radio" name="loan-length" value="five-years">5 Years</label>
+		<label><input type="radio" name="loan-length" value="fifteen-years">15 Years</label>
+		<label><input type="radio" name="loan-length" value="thirty-years">30 Years</label>
+
+
+		<label for="specail-conditions">Special Conditions:</label>
+		<label><input type="checkbox" name="down-payment" value="down-payment">I have a down payment.</label>
+		<label><input type="checkbox" name="out-of-state" value="out-of-state">I am an Out-of-State resident.</label>
+		<label><input type="checkbox" name="married" value="married">I am married.</label>
+		<label><input type="checkbox" name="co-signed" value="co-signed">I have a co-signer.</label>
+
+		<label for="comments">Additional Comments:</label><br>
+		<textarea id="comments" name="comments"></textarea>
+
+		<label for="applicant-email">Enter your Email Address:</label><br>
+		<input type="email" id="email" name="applicant-email" placeholder="you@megalomania.com">
+
+		<label for="applicant-tel">Enter your Telephone Number:</label><br>
+		<input type="tel" id="tel" name="applicant-tel" placeholder="(123)456-7890">
+
+
+
+	</form>
+
+
+
+
+
+</body>
+
+<footer>
+	
+</footer>
+
+</html>
