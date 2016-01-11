@@ -6,6 +6,27 @@ body {
 
 
 
+/*////////FONTS////////*/
+
+@font-face {
+	font-family: Besom;
+	src: url(fonts/Besom.ttf);
+}
+
+@font-face {
+	font-family: Cabana;
+	src: url(fonts/Cabana-Regular.otf);
+}
+
+@font-face {
+	font-family: MadSquire;
+	src: url(fonts/MadSquire-Regular.otf);
+}
+
+
+
+/*////////GENERAL////////*/
+
 .content-area {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -22,7 +43,6 @@ body {
 
 .universal-header { 
    background: linear-gradient(to bottom, rgba(204,0,0,0) 70%, rgba(255,153,0,1)), url("images/SMBbg.jpg") no-repeat top center fixed;
-   /*opacity: .2;*/
    height: 388px;
    width: 100%;
    margin: 0;
@@ -34,7 +54,9 @@ body {
 
 h1 {
 	margin: auto;
-
+	font-family: Besom;
+	font-weight: normal;
+	font-size: 2.5em;
 }
 
 .headspace {
@@ -51,8 +73,8 @@ nav {
 }
 
 .nav-bar {
-	width: 33%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .nav-bar > li {
@@ -89,7 +111,8 @@ nav {
 /*//////////ARTICLES///////*/
 
 article {
-	margin-left: 2%;
+	margin-top: 5%;
+	margin-left: 5%;
 	margin-right: 2%;
 }
 
@@ -97,6 +120,34 @@ article img{
 	border-radius: 15px 60px 30px;
 	float: left;
 	margin-right: 20px;
+}
+
+.mission-statement h3{
+	margin: -10px auto 30px 15%;
+	font-style: italic;
+	border-left: 1px solid grey;
+	padding-left: 5px;
+	font-weight: lighter;
+	font-size: 1em;
+}
+
+h2 {
+	font-family: Helvetica;
+	color: #097054;	
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+h5 {
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+.page-social {
+	border-radius: 0;
 }
 
 
@@ -120,4 +171,18 @@ article img{
 	text-decoration: none;
 	color: #6599ff;
 	font-weight: bold;
+}
+
+
+
+/*////////MEDIA QUERIES////////*/
+
+@media screen and (max-width: 600px) {
+	h5 {
+		clear: both;
+	}
+
+	.product p {
+		clear: both;
+	}
 }
